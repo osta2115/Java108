@@ -2,7 +2,7 @@ package edu.sda.javaadvanced.basics.extending;
 
 /**
  * Klasa która nie dziedziczy jawnie po żadnej innej klasie
- * Dziedziczy w sposób niejawny po klasie java.lang.Objekt
+ * Dziedziczy w sposób niejawny po klasie java.lang.Object
  * Dzięki temu w każdej klasie mamy dostępne metody odziedziczone z Object:
  * toString(), equals(), hashCode(), ...
  */

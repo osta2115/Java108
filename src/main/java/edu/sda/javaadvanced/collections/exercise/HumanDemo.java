@@ -30,7 +30,7 @@ public class HumanDemo {
         setOfPeople.add(human3);
 
         System.out.println("Lista ludzi:");
-        printListOfPeople(listofPeople);
+        //printListOfPeople(listofPeople);
         grubaKrecha();
 
         System.out.println("Set ludzi:");
@@ -39,7 +39,7 @@ public class HumanDemo {
 
         System.out.println("Posortowana lista po nazwisku:");
         listofPeople.sort(Human::compareTo);
-        printListOfPeople(listofPeople);
+        //printListOfPeople(listofPeople);
         grubaKrecha();
 
         System.out.println("Posortowana lista po nazwisku i imieniu od Z do A:");
@@ -49,18 +49,18 @@ public class HumanDemo {
         listofPeople.add(human6);
         listofPeople.add(human7);
         Collections.sort(listofPeople, new HumanBySurnameAndNameFromZToAComparator());
-        printListOfPeople(listofPeople);
+        //printListOfPeople(listofPeople);
         grubaKrecha();
 
         System.out.println("Posortowana po wieku i imieniu:");
         Collections.sort(listofPeople, new HumanByAgeAndNameComparator());
-        printListOfPeople(listofPeople);
+        //printListOfPeople(listofPeople);
         grubaKrecha();
 
         System.out.println("Posortowana po plci i wieku:");
         Collections.sort(listofPeople, new HumanByGenderAndAgeComparator());
         //listofPeople.sort(new HumanByAgeAndNameComparator()); <--- to samo co wyzej
-        printListOfPeople(listofPeople);
+       //printListOfPeople(listofPeople);
         grubaKrecha();
     }
 
@@ -70,11 +70,11 @@ public class HumanDemo {
         }
     }
 
-    private static void printListOfPeople(List<Human> listofPeople) {
-        for (Human human : listofPeople) {
-            System.out.println(human.getHumanInfo());
-        }
-    }
+//    private static void printListOfPeople(List<Human> listofPeople) {
+//        for (Human human : listofPeople) {
+//            System.out.println(human.getHumanInfo());
+//        }
+//    }
 
     private static void grubaKrecha(){
         System.out.println("=====================");
