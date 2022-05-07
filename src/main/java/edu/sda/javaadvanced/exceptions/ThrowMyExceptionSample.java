@@ -17,7 +17,7 @@ public class ThrowMyExceptionSample {
     public static void main(String[] args) {
         ThrowMyExceptionSample sample = new ThrowMyExceptionSample();
         try {
-            sample.myExceptionPasser(1);
+            sample.myExceptionPasser(-1);
         } catch (MySampleException ex) {
             System.out.println("Olać obsługę, jedziemy dalej z tematem");
         }

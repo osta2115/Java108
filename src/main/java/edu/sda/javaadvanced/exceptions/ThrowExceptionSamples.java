@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 public class ThrowExceptionSamples {
 
-    //tym razem wyjątek "oddajemy" metodzie która wywołała sleepThread()
+    //tym razem wyjątek "oddajemy" metodzie, która wywołała sleepThread()
     public void sleepThread() throws InterruptedException {
         Thread.sleep(5000);
     }
@@ -21,7 +21,7 @@ public class ThrowExceptionSamples {
         new FileReader("aaa.txt");
     }
 
-    //zestaw jeśli mamy 2 różne wyjątki
+    //zestaw, jeśli mamy 2 różne wyjątki
     public void sleepThreadEx1() throws InterruptedException {
         Thread.sleep(5000);
     }

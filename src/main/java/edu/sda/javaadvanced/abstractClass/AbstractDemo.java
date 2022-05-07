@@ -5,7 +5,7 @@ public class AbstractDemo {
 
 
         /**
-         * Nie da się bezpośrednio zrobić obiektu z klasy abstrakcyjnej
+         * Nie da się bezpośrednio zrobić obiektu z klasy abstrakcyjnej,
          * chyba że przy definicji obiektu od razu napiszemy "jednorazowe" ciało klasy
          */
 //        Animal animal = new Animal() {

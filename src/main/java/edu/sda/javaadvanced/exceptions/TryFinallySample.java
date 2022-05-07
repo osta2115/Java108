@@ -15,7 +15,7 @@ public class TryFinallySample {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } finally {
-            //blok finally wykonuje się zawsze, niezależnie od tego
+            //blok finally wykonuje się zawsze, niezależnie od tego,
             //czy blok try skończył się poprawnie, czy wystąpił wyjątek
             //i system przeszedł do bloku catch
             //finally wykonuje się PO try / catch
@@ -30,7 +30,7 @@ public class TryFinallySample {
         //try-with-resources dostępne od Javy 1.7
         //w klauzuli try() w nawiasie () mamy zdefiniowany zasób
         //dzięki czemu ZAMKNIĘCIE tego zasobu bierze na siebie Java
-        //czyli reader.close() zostanie wywołane automagicznie bez potrzeby wpisywania tego jawnie w kodzie
+        //czyli reader.close() zostanie wywołane automatycznie bez potrzeby wpisywania tego jawnie w kodzie
         try(BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             reader.read();
         } catch (FileNotFoundException e) {
